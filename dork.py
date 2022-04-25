@@ -28,7 +28,7 @@ try:
 except ImportError:
     fast("[!] some module isn't installed ...")
     med("[*] wait a moment, this program will install the module ...")
-    os.system("pip3 install google bs4 urllib3 requests")
+    os.system("pip3 install -r requirements.txt")
     time.sleep(3)
     med("[*] done ...")
 
