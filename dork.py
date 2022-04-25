@@ -1,6 +1,9 @@
 import sys
 import time
 import os
+from urllib.parse import urlencode, urlunparse
+from urllib.request import urlopen, Request
+from bs4 import BeautifulSoup
 
 # custom speed strings
 def slow(s):
@@ -23,7 +26,7 @@ try:
     from googlesearch import search
 
 except ImportError:
-    fast("[!] you mush install google ..")
+    fast("[!] some module isn't installed ...")
     med("[*] wait a moment, this program will install the module ...")
     os.system("pip3 install google")
     time.sleep(3)
