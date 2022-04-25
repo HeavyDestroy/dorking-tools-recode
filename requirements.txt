@@ -1,0 +1,5 @@
+google
+bs4
+urllib3
+requests
+requests[socks]
