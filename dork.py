@@ -29,17 +29,6 @@ except ImportError:
     time.sleep(3)
     med("[*] done ...")
 
-def banner():
-    print("""
- ____             _    _            _____           _     
-|  _ \  ___  _ __| | _(_)_ __   __ |_   _|__   ___ | |___ 
-| | | |/ _ \| '__| |/ / | '_ \ / _` || |/ _ \ / _ \| / __|
-| |_| | (_) | |  |   <| | | | | (_| || | (_) | (_) | \__ \\
-|____/ \___/|_|  |_|\_\_|_| |_|\__, ||_|\___/ \___/|_|___/
-                               |___/    
-    """)
-
-
 def clear(): #clear function XD
     if sys.platform.startswith('linux'):
         os.system('clear')
@@ -56,21 +45,6 @@ else:
     slow("[x] you must be run using python3 ...")
     time.sleep(3)
     sys.exit(1)
-
-# print starting XD
-slow('[!] starting ... ')
-time.sleep(2)
-clear()
-time.sleep(1)
-banner()
-med("""
-===============================================================================
-[*] coded by root@x-krypt0n-x                                               [*]
-[*] Copyright 2020 SystemOfPekalongan                                       [*]
-[*] just simple tools to make your life easier                              [*]
-[*] Thanks to ArdiRNN, not heker, warwer, jeager                            [*]
-===============================================================================""")
-time.sleep(2)
 
 try:
     namefile = input("\n[?] want to save the dork result file (Y/N) ").strip()
