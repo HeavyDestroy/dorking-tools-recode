@@ -4,6 +4,7 @@ import os
 from urllib.parse import urlencode, urlunparse
 from urllib.request import urlopen, Request
 from bs4 import BeautifulSoup
+from search_engines import Google
 
 # custom speed strings
 def slow(s):
@@ -82,8 +83,8 @@ def akhir():
         print ("\n ")
 
         requ = 0
-
-        for results in search(dork, tld="com", lang="en", num=int(uneed), start=0, stop=None, pause=2):
+        engine = Google()
+        for results in engine.search(dork, tld="com", lang="en", num=int(uneed), start=0, stop=None, pause=2):
             print ("[*]", results)
             time.sleep(0.1)
             requ += 1.
